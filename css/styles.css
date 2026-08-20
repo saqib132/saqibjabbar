@@ -727,6 +727,11 @@ h1.hero__name {
   height: 56px;
   border-radius: 50%;
   background: var(--color-accent);
+  transition: transform 0.15s ease;
+}
+
+.case-video-thumb:hover .case-video-thumb__play {
+  transform: scale(1.08);
 }
 
 .case-video-thumb__play::after {
