@@ -37,3 +37,15 @@ if (timeline) {
     document.querySelectorAll(".timeline__item").forEach((item) => item.classList.add("in-view"));
   }
 }
+
+document.querySelectorAll(".case-video-thumb[data-video-id]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${btn.dataset.videoId}?autoplay=1`;
+    iframe.title = "YouTube video player";
+    iframe.className = "case-video-thumb__iframe";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    btn.replaceWith(iframe);
+  });
+});

@@ -704,12 +704,27 @@ h1.hero__name {
   justify-content: center;
   gap: var(--space-2);
   aspect-ratio: 16 / 9;
+  width: 100%;
   max-width: 36rem;
   margin: 0 auto var(--space-3);
+  padding: 0;
   background: var(--color-bg-raised);
   border: 1px solid var(--color-border);
   border-radius: 8px;
   overflow: hidden;
+  font: inherit;
+  cursor: pointer;
+  appearance: none;
+}
+
+.case-video-thumb__iframe {
+  display: block;
+  width: 100%;
+  max-width: 36rem;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
 }
 
 .case-video-thumb img {
