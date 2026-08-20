@@ -9,3 +9,31 @@ if (hashTarget && hashTarget.tagName === "DETAILS") {
   hashTarget.open = true;
   hashTarget.scrollIntoView();
 }
+
+const timeline = document.querySelector(".timeline");
+if (timeline) {
+  if ("IntersectionObserver" in window) {
+    const lineObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          timeline.classList.add("in-view");
+          lineObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.1 });
+    lineObserver.observe(timeline);
+
+    const itemObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          itemObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll(".timeline__item").forEach((item) => itemObserver.observe(item));
+  } else {
+    timeline.classList.add("in-view");
+    document.querySelectorAll(".timeline__item").forEach((item) => item.classList.add("in-view"));
+  }
+}

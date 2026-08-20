@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Outbound for Real Estate CRM in UAE | Saqib Jabbar</title>
+<meta name="description" content="A system that finds real estate companies the moment they start running Meta lead-gen ads, and reaches the right person there with a message written for them specifically." />
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a href="/" class="wordmark">Saqib Jabbar</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/resume/">Resume</a>
+      <a href="/projects/" aria-current="page">Projects</a>
+      <a href="/tools/">Tools</a>
+    </nav>
+    <a class="btn btn--ghost btn--small" href="mailto:132saqib@gmail.com">Email Me</a>
+  </div>
+</header>
+
+<main>
+  <section class="section wrap">
+    <p class="eyebrow">Project &middot; 2025</p>
+    <h1>Outbound for Real Estate CRM in UAE</h1>
+    <p class="case-dek">
+      A system that finds real estate companies the moment they start running Meta lead-gen ads, and
+      reaches the right person there with a message written for them specifically, not a template.
+    </p>
+    <p class="case-meta">
+      <span>Client: a UAE-based CRM startup</span>
+      <span>Status: Live</span>
+      <span>Built solo</span>
+    </p>
+
+    <!-- TODO: once you have the YouTube link, replace this block with:
+    <a class="case-video-thumb" href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg" alt="Watch the walkthrough on YouTube" />
+      <span class="case-video-thumb__play" aria-hidden="true"></span>
+    </a>
+    -->
+    <div class="case-video-thumb case-video-thumb--placeholder">
+      <span class="case-video-thumb__play" aria-hidden="true"></span>
+      <span class="case-video-thumb__label">Watch the walkthrough (video coming soon)</span>
+    </div>
+
+    <div class="tool-icons">
+      <span class="tool-icon"><img src="/assets/tools/n8n.svg" alt="" /> n8n</span>
+      <span class="tool-icon"><img src="/assets/tools/apify.png" alt="" /> Apify</span>
+      <span class="tool-icon"><img src="/assets/tools/bigquery.svg" alt="" /> BigQuery</span>
+      <span class="tool-icon"><img src="/assets/tools/slack.png" alt="" /> Slack</span>
+      <span class="tool-icon"><img src="/assets/tools/clay.png" alt="" /> Clay</span>
+      <span class="tool-icon"><img src="/assets/tools/openai.png" alt="" /> OpenAI</span>
+      <span class="tool-icon"><img src="/assets/tools/apollo.png" alt="" /> Apollo</span>
+      <span class="tool-icon"><img src="/assets/tools/zerobounce.png" alt="" /> ZeroBounce</span>
+      <span class="tool-icon"><img src="/assets/tools/instantly.png" alt="" /> Instantly</span>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section__heading">The signal</h2>
+    <p>
+      The CRM is built for real estate companies running lead-gen ads on Meta. So one of the
+      strongest buying signals is simple: a company that just started running those ads. The moment
+      that happens, we want to be the first ones in their inbox, not the fifth.
+    </p>
+
+    <div class="flow-diagram">
+      <div class="flow-step">
+        <span class="flow-step__icon"><img src="/assets/tools/meta.svg" alt="" /></span>
+        <span class="flow-step__label">New Meta ad</span>
+      </div>
+      <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+      <div class="flow-step">
+        <span class="flow-step__icon-row">
+          <span class="flow-step__icon flow-step__icon--sm"><img src="/assets/tools/n8n.svg" alt="" /></span>
+          <span class="flow-step__icon flow-step__icon--sm"><img src="/assets/tools/apify.png" alt="" /></span>
+          <span class="flow-step__icon flow-step__icon--sm"><img src="/assets/tools/clay.png" alt="" /></span>
+        </span>
+        <span class="flow-step__label">n8n, Apify, Clay</span>
+      </div>
+      <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+      <div class="flow-step">
+        <span class="flow-step__icon"><img src="/assets/tools/instantly.png" alt="" /></span>
+        <span class="flow-step__label">Instantly</span>
+      </div>
+      <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+      <div class="flow-step">
+        <span class="flow-step__icon"><img src="/assets/tools/hubspot.svg" alt="" /></span>
+        <span class="flow-step__label">HubSpot</span>
+      </div>
+      <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+      <div class="flow-step">
+        <span class="flow-step__icon flow-step__icon--check" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+        </span>
+        <span class="flow-step__label">Paying customer</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section__heading">Finding every new advertiser</h2>
+    <div class="case-steps">
+      <div class="case-step">
+        <span class="case-step__num" aria-hidden="true">1</span>
+        <div class="case-step__body">
+          <h3>Fetch on a schedule</h3>
+          <p>An n8n workflow runs periodically and pulls every company currently running ads through
+          Apify's Facebook Ads Library Scraper.</p>
+          <img class="case-img" src="/assets/projects/ai-outbound-pipeline/apify-actor-config.png" alt="n8n node configuration for the Apify Facebook Ads Library Scraper actor" loading="lazy" />
+        </div>
+      </div>
+      <div class="case-step">
+        <span class="case-step__num" aria-hidden="true">2</span>
+        <div class="case-step__body">
+          <h3>Track everything we've seen</h3>
+          <p>Apify has no way to filter to just "new" ads, so a BigQuery database keeps a running
+          record of every page and ad seen. New activity gets found by diffing against it.</p>
+          <img class="case-img" src="/assets/projects/ai-outbound-pipeline/bigquery-schema.png" alt="BigQuery schema for the real_estate_uae_page table tracking every page and ad seen" loading="lazy" />
+        </div>
+      </div>
+      <div class="case-step">
+        <span class="case-step__num" aria-hidden="true">3</span>
+        <div class="case-step__body">
+          <h3>Filter and enrich the new ones</h3>
+          <p>Each row is checked: is the page category real estate? Is the ad already in our database?
+          If it's genuinely new, a second Apify actor pulls the full page profile, and an HTTP request
+          pushes it into Clay for the next stage.</p>
+          <img class="case-img" src="/assets/projects/ai-outbound-pipeline/workflow-fetch-companies.png" alt="n8n workflow diagram: schedule trigger, Apify actor, loop over items, filter for real estate, check if ad exists, insert new ad" loading="lazy" />
+        </div>
+      </div>
+      <div class="case-step">
+        <span class="case-step__num" aria-hidden="true">4</span>
+        <div class="case-step__body">
+          <h3>Alert the team</h3>
+          <p>The same workflow fires a Slack notification, so new companies showing up in the pipeline
+          are visible in real time, not just in a dashboard someone has to check.</p>
+          <img class="case-img" src="/assets/projects/ai-outbound-pipeline/slack-alert.png" alt="Slack channel showing real-time notifications as new company pages are added to the pipeline" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section__heading">Qualifying the list, with AI doing the filtering</h2>
+    <div class="case-steps">
+      <div class="case-step">
+        <span class="case-step__num" aria-hidden="true">1</span>
+        <div class="case-step__body">
+          <h3>Confirm they're in the UAE</h3>
+          <p>Checked first by phone number or address, using a free formula, so no AI credits are
+          spent unless needed.</p>
+          <img class="case-img" src="/assets/projects/ai-outbound-pipeline/clay-uae-formula.png" alt="Clay formula editor: a free formula checking phone and address fields against UAE, Dubai, and Abu Dhabi to determine UAE status" loading="lazy" />
+          <p style="margin-top: 0.8em;">If that's inconclusive, a cheaper GPT model tier (about 6x less
+          expensive, since overkill isn't needed for a task this simple) resolves location from the
+          company's website or Google profile instead.</p>
+          <img class="case-img" src="/assets/projects/ai-outbound-pipeline/clay-ai-research-prompt.png" alt="Claygent AI web-research prompt configured to verify a company's existence and extract its address, website URL, and phone number from authoritative sources" loading="lazy" />
+        </div>
+      </div>
+      <div class="case-step">
+        <span class="case-step__num" aria-hidden="true">2</span>
+        <div class="case-step__body">
+          <h3>Confirm they have a valid website</h3>
+          <p>Same pattern: a free formula check runs first. Only rows still empty after that get an AI
+          web crawl to find one, which keeps credit spend down by not running AI on rows that don't
+          need it.</p>
+          <img class="case-img" src="/assets/projects/ai-outbound-pipeline/clay-ai-website-prompt.png" alt="AI prompt for resolving a company's official website URL, with worked input/output examples" loading="lazy" />
+        </div>
+      </div>
+      <div class="case-step">
+        <span class="case-step__num" aria-hidden="true">3</span>
+        <div class="case-step__body">
+          <h3>Find the right people</h3>
+          <p>From the filtered list of UAE-based companies with valid websites, Clay identifies the
+          Sales Managers, Marketing Managers, and Owners at each firm.</p>
+          <img class="case-img" src="/assets/projects/ai-outbound-pipeline/apollo-job-filters.png" alt="Apollo.io job title filters set to Marketing Manager, Sales Manager, Owner, CEO, and Operations Manager" loading="lazy" />
+        </div>
+      </div>
+      <div class="case-step">
+        <span class="case-step__num" aria-hidden="true">4</span>
+        <div class="case-step__body">
+          <h3>Enrich emails with a waterfall</h3>
+          <p>Email addresses are found through waterfall enrichment across Lead Magic, Apollo, and
+          Prospeo, trying each provider in turn to maximize the hit rate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section__heading">Writing to each person differently</h2>
+    <p class="case-dek">
+      A CEO, a Sales Manager, and a Marketing Manager care about different things, so the emails
+      aren't the same. Every email is generated through multi-step AI prompts, using the actual ad
+      the company is running as the personalization hook.
+    </p>
+
+    <div class="email-samples">
+      <div class="email-sample">
+        <p class="email-sample__persona">CEO</p>
+        <div class="email-client">
+          <p class="email-client__subject">the AED 200K gap angle in your Meta ad</p>
+          <div class="email-client__meta">
+            <span class="email-client__avatar" aria-hidden="true">S</span>
+            <div class="email-client__who">
+              <p class="email-client__name">Saqib Jabbar</p>
+              <p class="email-client__addr">132saqib@gmail.com</p>
+              <p class="email-client__to">to Paul</p>
+            </div>
+            <span class="email-client__time">10:42 AM</span>
+          </div>
+          <p class="email-client__body">Hi Paul,
+
+Your ad is pretty blunt about it. Pick the wrong unit and investors lose AED 200K+. Switching someone from a trendy apartment to a high performing villa is exactly the kind of advice that closes deals, if the follow up call happens before they cool off.
+
+Does your team's CRM actually get used, or does it sit there while those "buy based on math" leads go stale?
+
+The CRM is built so agents actually use it. Fast follow up, nothing slips through.
+
+Want a quick look at how many leads from this ad have already gone cold?
+
+Saqib</p>
+          <div class="email-client__actions">
+            <span class="email-client__action">Reply</span>
+            <span class="email-client__action">Forward</span>
+          </div>
+        </div>
+      </div>
+      <div class="email-sample">
+        <p class="email-sample__persona">Sales Manager</p>
+        <div class="email-client">
+          <p class="email-client__subject">your villa vs apartment leads not converting due to speed</p>
+          <div class="email-client__meta">
+            <span class="email-client__avatar" aria-hidden="true">S</span>
+            <div class="email-client__who">
+              <p class="email-client__name">Saqib Jabbar</p>
+              <p class="email-client__addr">132saqib@gmail.com</p>
+              <p class="email-client__to">to James</p>
+            </div>
+            <span class="email-client__time">11:15 AM</span>
+          </div>
+          <p class="email-client__body">Hey James,
+
+Your ad promises real ROI numbers and profit projections. That's the kind of detail that pulls in investors who are ready to move, not just browsing.
+
+Are your reps logging follow ups fast enough to catch them while they're still comparing villa vs apartment numbers? Or does stuff slip because updating the CRM is a hassle?
+
+The CRM auto assigns leads and nudges reps to follow up. No manual entry, just faster response.
+
+Want to see how fast your reps are actually following up right now?
+
+Saqib</p>
+          <div class="email-client__actions">
+            <span class="email-client__action">Reply</span>
+            <span class="email-client__action">Forward</span>
+          </div>
+        </div>
+      </div>
+      <div class="email-sample">
+        <p class="email-sample__persona">Marketing Manager</p>
+        <div class="email-client">
+          <p class="email-client__subject">visibility into your financial guide meta leads</p>
+          <div class="email-client__meta">
+            <span class="email-client__avatar" aria-hidden="true">S</span>
+            <div class="email-client__who">
+              <p class="email-client__name">Saqib Jabbar</p>
+              <p class="email-client__addr">132saqib@gmail.com</p>
+              <p class="email-client__to">to Ali</p>
+            </div>
+            <span class="email-client__time">2:03 PM</span>
+          </div>
+          <p class="email-client__body">Hi Ali,
+
+The financial guide angle is smart. Real ROI numbers, profit projections, top performing launches. That pulls in buyers who actually want data, not just brochures.
+
+Here's the gap though. Once someone downloads it and gets handed to sales, do you ever find out if they bought it? Or does the trail just stop at "lead submitted"?
+
+The CRM follows every lead from that form all the way to close, so you can see which angle, which goal (ROI vs rental yield vs lifestyle), and which launch actually turns into revenue. Not just cost per lead.
+
+Want a quick look at what that'd show for your last few campaigns?
+
+Saqib</p>
+          <div class="email-client__actions">
+            <span class="email-client__action">Reply</span>
+            <span class="email-client__action">Forward</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="section__hint" style="margin-top: 1.5rem;">Emails are generated on Clay using the ad context, then pushed to Instantly for the send sequence.</p>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section__heading">Results</h2>
+    <p class="case-dek">Lead funnel for the Sales Managers campaign, six weeks in:</p>
+    <img class="results-img" src="/assets/projects/ai-outbound-pipeline/results-funnel.png" alt="Lead funnel over time: 5,687 contacted, 5,134 delivered (90.3%), 1,594 opened (31.0%), 1,623 clicked or accepted (31.6%), 308 replied (6.0%), 0 marked interested (0.0%)" loading="lazy" />
+    <p class="case-caveat">"Interested" sits at 0% because that status isn't actively tagged in this
+    tool. The 308 replies (6.0%) are the real signal, and are triaged manually from there.</p>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section__heading">Why it works</h2>
+    <ul class="case-list">
+      <li>Strong signal of someone already spending on Meta</li>
+      <li>Highly personalized emails, not templates</li>
+      <li>Different messaging for different roles at the same company</li>
+      <li>First in the inbox, right after they start running ads, before anyone else reaches out</li>
+    </ul>
+  </section>
+
+  <section class="section wrap">
+    <h2 class="section__heading">What happens after a reply</h2>
+    <p>
+      Replies are handled and handed to the sales team for calling. From there: calls &rarr; demo
+      booked &rarr; demo given &rarr; follow-up calls &rarr; payment and contract.
+    </p>
+    <div class="hero__cta" style="margin-top: 1.5rem;">
+      <a class="btn btn--ghost" href="/projects/">&larr; All Projects</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      <p class="site-footer__name">Saqib Jabbar</p>
+      <p class="site-footer__location">Islamabad, Pakistan</p>
+    </div>
+    <div class="site-footer__contact">
+      <a href="mailto:132saqib@gmail.com">132saqib@gmail.com</a>
+      <a href="tel:+923468173203">+92 (346) 817-3203</a>
+      <a href="/resume/">View Résumé</a>
+    </div>
+    <p class="site-footer__copy">&copy; <span id="year"></span> Saqib Jabbar</p>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
