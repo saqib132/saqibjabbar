@@ -26,7 +26,7 @@
   </div>
 </header>
 
-<main id="top">
+<main id="top" class="home">
 
   <section class="hero wrap">
     <div class="hero__intro">
@@ -49,10 +49,10 @@
 
   <section class="section wrap video-intro">
     <h2 class="section__heading">A quick intro</h2>
-    <div class="video-placeholder" role="img" aria-label="Introduction video placeholder, coming soon">
-      <span class="video-placeholder__play" aria-hidden="true"></span>
-      <span class="video-placeholder__label">Video coming soon</span>
-    </div>
+    <button type="button" class="case-video-thumb" data-video-id="xWIrnavibrg" aria-label="Play the introduction video">
+      <img src="https://img.youtube.com/vi/xWIrnavibrg/maxresdefault.jpg" alt="" />
+      <span class="case-video-thumb__play" aria-hidden="true"></span>
+    </button>
   </section>
 
   <section class="section wrap about">
@@ -80,9 +80,28 @@
     </div>
   </section>
 
+  <section class="section wrap">
+    <h2 class="section__heading">Recent Projects</h2>
+    <p class="section__hint">More going up here over time. This is the first.</p>
+
+    <div class="project-card">
+      <h3>Outbound for Real Estate CRM in UAE</h3>
+      <p>A system that finds real estate companies the moment they start running Meta lead-gen ads,
+      and reaches the right person there with a message written for them specifically.</p>
+      <div class="tool-icons">
+        <span class="tool-icon"><img src="/assets/tools/n8n.svg" alt="" /> n8n</span>
+        <span class="tool-icon"><img src="/assets/tools/apify.png" alt="" /> Apify</span>
+        <span class="tool-icon"><img src="/assets/tools/bigquery.svg" alt="" /> BigQuery</span>
+        <span class="tool-icon"><img src="/assets/tools/clay.png" alt="" /> Clay</span>
+        <span class="tool-icon"><img src="/assets/tools/openai.png" alt="" /> OpenAI</span>
+      </div>
+      <a class="project-link" href="/projects/ai-outbound-pipeline/">Read the case study &rarr;</a>
+    </div>
+  </section>
+
   <section class="section wrap journey">
     <h2 class="section__heading">How I got here</h2>
-    <p class="section__hint">Four jobs, one thread.</p>
+    <p class="section__hint">Seven stages, one thread.</p>
 
     <div class="timeline">
       <div class="timeline__line" aria-hidden="true"></div>
@@ -92,18 +111,42 @@
         <div class="timeline__content">
           <p class="timeline__dates">2015 &ndash; 2020</p>
           <h3 class="timeline__title">Mechanical Engineer</h3>
-          <p class="timeline__org">Bilkent University</p>
-          <p class="timeline__desc">Full scholarship, mechanical engineering, where I learned to
-          think in systems before I ever wrote a line of code.</p>
+          <p class="timeline__org">Bilkent University, Turkey</p>
+          <p class="timeline__desc">Not a job yet, just a student. Full scholarship in mechanical
+          engineering, where I learned to think in systems before I ever wrote a line of code.
+          Engineers are naturally obsessed with problem solving.</p>
         </div>
       </div>
 
       <div class="timeline__item">
         <span class="timeline__dot" aria-hidden="true"></span>
         <div class="timeline__content">
-          <p class="timeline__dates">2021 &ndash; 2023</p>
+          <p class="timeline__dates">2018</p>
+          <h3 class="timeline__title">Erasmus Exchange Semester</h3>
+          <p class="timeline__org">Aston University, Birmingham, UK</p>
+          <p class="timeline__desc">One semester abroad on an Erasmus exchange. Estimation,
+          Measurement &amp; Scheduling, and Advanced Computer Aided Design, a different system
+          before heading back to Bilkent.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <span class="timeline__dot" aria-hidden="true"></span>
+        <div class="timeline__content">
+          <p class="timeline__dates">2021 &ndash; 2022</p>
           <h3 class="timeline__title">Technical Support Engineer</h3>
-          <p class="timeline__org">KeepTruckin &rarr; JaldiTech</p>
+          <p class="timeline__org">Motive, US-based Fleet Management SaaS</p>
+          <p class="timeline__desc">Took an average of 60 to 70 calls a day. Never been afraid of
+          getting in front of customers since.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <span class="timeline__dot" aria-hidden="true"></span>
+        <div class="timeline__content">
+          <p class="timeline__dates">2022 &ndash; 2023</p>
+          <h3 class="timeline__title">Support Engineer</h3>
+          <p class="timeline__org">Motive, US-based Fleet Management SaaS</p>
           <p class="timeline__desc">Closed 2,000+ support cases and learned every edge case in how
           customers actually use software. The best training there is for building it.</p>
         </div>
@@ -112,22 +155,34 @@
       <div class="timeline__item">
         <span class="timeline__dot" aria-hidden="true"></span>
         <div class="timeline__content">
+          <p class="timeline__dates">2023</p>
+          <h3 class="timeline__title">Technical Support Engineer</h3>
+          <p class="timeline__org">JaldiTech, UAE-based CRM startup</p>
+          <p class="timeline__desc">Joined Jaldi in support, helping customers onboard onto the
+          software and understanding the issues its ICP actually faced.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <span class="timeline__dot" aria-hidden="true"></span>
+        <div class="timeline__content">
           <p class="timeline__dates">2023 &ndash; 2025</p>
           <h3 class="timeline__title">Growth Lead</h3>
-          <p class="timeline__org">JaldiTech</p>
-          <p class="timeline__desc">Built the analytics stack, then the Pakistan sales market, then
-          the automation to run both without adding headcount.</p>
+          <p class="timeline__org">JaldiTech, UAE-based CRM startup</p>
+          <p class="timeline__desc">Built the analytics stack, ran Meta inbound marketing, handled
+          demos and sales calls, and built custom integrations for customers.</p>
         </div>
       </div>
 
       <div class="timeline__item timeline__item--current">
         <span class="timeline__dot" aria-hidden="true"></span>
         <div class="timeline__content">
-          <p class="timeline__dates">Now</p>
-          <h3 class="timeline__title">GTM Engineer</h3>
-          <p class="timeline__org">JaldiTech</p>
-          <p class="timeline__desc">Where growth, automation, and engineering stop being separate
-          jobs.</p>
+          <p class="timeline__dates">2025 &ndash; Now</p>
+          <h3 class="timeline__title">Growth &amp; Ops Manager (GTM Engineer)</h3>
+          <p class="timeline__org">JaldiTech, UAE-based CRM startup</p>
+          <p class="timeline__desc">Where growth, sales, automation, and engineering stop being
+          separate jobs. Built and nurtured lead lists for the sales team, handing off warm leads
+          for closing and saving them hours of prospecting time.</p>
         </div>
       </div>
     </div>

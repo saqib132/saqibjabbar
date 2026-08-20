@@ -280,6 +280,20 @@ h1.hero__name {
   padding-bottom: var(--space-5);
 }
 
+/* Tighter section rhythm on the homepage specifically */
+.home .section {
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-4);
+}
+
+.home .hero {
+  padding-bottom: var(--space-3);
+}
+
+.video-intro .case-video-thumb {
+  margin-top: var(--space-3);
+}
+
 .section__heading {
   font-size: 1.6rem;
   margin-bottom: var(--space-1);
@@ -300,47 +314,6 @@ h1.hero__name {
 
 .section--dark .section__heading { color: var(--color-dark-text); }
 .section--dark .section__hint { color: var(--color-dark-text-muted); }
-
-/* ---------------------------------------------------------
-   Landing — Video intro
---------------------------------------------------------- */
-.video-placeholder {
-  aspect-ratio: 16 / 9;
-  max-width: 42rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  background: var(--color-bg-raised);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-}
-
-.video-placeholder__play {
-  position: relative;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: var(--color-accent);
-}
-
-.video-placeholder__play::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 56%;
-  transform: translate(-50%, -50%);
-  border-style: solid;
-  border-width: 10px 0 10px 16px;
-  border-color: transparent transparent transparent var(--color-bg-raised);
-}
-
-.video-placeholder__label {
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-}
 
 /* ---------------------------------------------------------
    Landing — About / values
