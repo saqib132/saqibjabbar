@@ -38,6 +38,23 @@ if (timeline) {
   }
 }
 
+const journeyMap = document.querySelector(".journey-map");
+if (journeyMap) {
+  if ("IntersectionObserver" in window) {
+    const mapObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          journeyMap.classList.add("in-view");
+          mapObserver.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+    mapObserver.observe(journeyMap);
+  } else {
+    journeyMap.classList.add("in-view");
+  }
+}
+
 document.querySelectorAll(".case-video-thumb[data-video-id]").forEach((btn) => {
   btn.addEventListener("click", () => {
     const iframe = document.createElement("iframe");
