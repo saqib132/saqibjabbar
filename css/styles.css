@@ -436,9 +436,8 @@ h1.hero__name {
 /* ---------------------------------------------------------
    Landing — Journey map (Pakistan / Turkey / UK)
 --------------------------------------------------------- */
-.journey-map__eyebrow {
-  max-width: 600px;
-  margin: 0 auto var(--space-2);
+.journey .eyebrow {
+  margin-bottom: var(--space-2);
 }
 
 .journey-map {
